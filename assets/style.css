@@ -1,0 +1,276 @@
+
+body{
+    background-color: #c5c5c5;
+    color: black;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 2 ;
+    /* background-image: url(images/rhombus.png); */
+    width: 100%;
+}
+
+html{
+    width: 100%;
+}
+h1{ 
+    color: #d13535;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+h2{ 
+    background-color: #d13535;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+    z-index: 1;
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    background-color: #ffffff;
+    border-color: #cccccc; 
+    border-bottom: solid; 
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+#headerbox{
+    width: 80%;
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navlinks{
+    float: right;
+    text-align: center;
+    position: relative;
+    /* right: -40px; */
+    font-size: 18px;
+    padding: 20px;
+}
+
+.item-link{
+    color: white;
+}
+
+hr{
+    height: 3px;
+    background: #ccc;
+    border-style: none;
+}
+
+img{
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;    
+}
+
+a{
+    text-decoration: none;
+    color: #777777;
+}
+a.visited{
+    color: #777777;
+}
+
+#name{
+    background-color: #d13535;
+    color: #ffffff;
+    font-size: 32px;
+    position: relative;
+    float: left;
+    width : 222px;
+    left: 0%;
+    height: 70px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+}
+
+section{
+    overflow: auto;
+    padding: 25px;
+    margin: 30px;
+    background-color: #ffffff;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.technologies{
+    width: 100%;
+    color: white;
+    background-color: #635e5e;
+    min-height: 20px;
+    bottom: 0px;
+    position: absolute;
+    display: block;
+    
+}
+
+.item{
+    float: left;
+    width: 95%;
+    min-height: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin-right: 20px;    
+    /* clear:both; */
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.sidebar{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 20%; /* Set the width of the sidebar */
+    position: absolute;
+    /* background-color: darkcyan;  */
+  
+}
+
+.sidebar-photo{
+    position: absolute;
+    left: 0px;
+    top: -25px;
+    width: 100%;
+    height: 67%;
+}
+
+.aside{
+    position: absolute;
+    overflow-y: auto;
+    width: 80%;
+    height: 10em;
+    right: 0;
+    border-style: solid;
+}
+
+
+
+
+/* CSS for the form page */
+input[type=text]{
+    position: relative;
+    width: 100%;
+    height: 2em;
+}
+input[type=text]:focus{
+    background-color: rgb(185, 215, 226);
+}
+input[name=message]{
+    height: 200px;
+}
+input[type=submit]{
+    background-color: #d13535;
+    width: 100px;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    border: 1px solid #d13535;
+    border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: #d13535;  
+    border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #b63030;  
+    }
+
+
+footer{
+    background: #666;
+    width: 100%;
+    height: auto;
+    color: #c5c5c5;     
+    text-align: center;
+    position: fixed;
+    /* border-width: 5px;
+    border-color: #d13535; */
+    border-top-style: solid;
+    bottom: 0%;
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 980px or less.
+*/
+@media screen and (max-width:980px) {
+
+    #headerbox{
+        width: 95%;
+        height: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+
+/*
+  These rules take effect when the browser's width
+  is either 640px or less.
+*/
+@media screen and (max-width:640px) {
+
+    header{
+        position: static;
+        height: 105px;
+        width: 103%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #headerbox{
+        width: 100%;
+    }
+
+    #navlinks{
+        float: none;
+        position: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+
+        right: auto;
+       
+    }
+
+    #name{
+        width: 100%;
+        left: 0;
+    }
+
+    section{
+        width: 95%;
+    }
+
+    
+}
